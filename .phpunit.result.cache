@@ -1,0 +1,1 @@
+{"version":2,"defects":{"Tests\\Feature\\StockFlowTest::test_stock_decrements_only_on_completed_status":8,"Tests\\Feature\\StockFlowTest::test_stock_edge_case_completed_to_pending":8},"times":{"Tests\\Feature\\StockFlowTest::test_stock_decrements_only_on_completed_status":0.155,"Tests\\Feature\\StockFlowTest::test_stock_edge_case_completed_to_pending":0.064}}
