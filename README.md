@@ -4,7 +4,7 @@ Colección de proyectos personales y académicos - Desarrollo web, aplicaciones 
 
 ## 🗂️ Proyectos
 
-### [Distribuidora](./distribuidora-project/)
+### 1. [Sistema Distribuidora](./distribuidora-project/)
 Sistema web completo para gestión de distribuidora con roles de Cliente, Trabajador y Administrador.
 
 **Tecnologías:** Laravel 10, Tailwind CSS, Alpine.js, MySQL  
@@ -15,13 +15,30 @@ Sistema web completo para gestión de distribuidora con roles de Cliente, Trabaj
 - 📱 Integración WhatsApp
 - 🎨 Modo oscuro
 
-[Ver documentación completa →](./distribuidora-project/README.md)
+[Ver documentación →](./distribuidora-project/README.md)
+
+---
+
+### 2. [Mi Proyecto](./mi-proyecto/)
+Aplicación web desarrollada con Laravel para [describir funcionalidad].
+
+**Tecnologías:** Laravel 10, PHP 8.1+, MySQL
+
+---
+
+### 3. [Super Orgánico](./superorganico/)
+Sistema de gestión con cálculo de impuestos para Bolivia.
+
+**Tecnologías:** Laravel 10, PHP 8.1+, MySQL  
+**Características:**
+- 📊 Cálculo de impuestos bolivianos
+- 📝 Gestión de datos
 
 ---
 
 ## 📊 Estadísticas
 
-- **Total de proyectos:** 1
+- **Total de proyectos:** 3
 - **Lenguajes principales:** PHP, JavaScript
 - **Frameworks:** Laravel, Tailwind CSS
 

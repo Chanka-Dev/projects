@@ -1,0 +1,244 @@
+/* Tema Púrpura - Fernanda Soruco Beauty & Makeup */
+
+:root {
+    --purple-primary: #A855F7;
+    --purple-dark: #7E22CE;
+    --purple-light: #C084FC;
+    --purple-lighter: #E9D5FF;
+    --purple-bg: #F3E8FF;
+}
+
+/* Sidebar personalizado */
+.sidebar-light-purple {
+    background: linear-gradient(180deg, var(--purple-primary) 0%, var(--purple-dark) 100%) !important;
+}
+
+.sidebar-light-purple .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.sidebar-light-purple .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: #fff !important;
+}
+
+.sidebar-light-purple .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
+}
+
+.sidebar-light-purple .nav-icon {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Brand/Logo */
+.brand-link.bg-purple {
+    background: var(--purple-primary) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.brand-link.bg-purple .brand-text {
+    color: #fff !important;
+}
+
+/* Botones principales */
+.btn-primary {
+    background-color: var(--purple-primary) !important;
+    border-color: var(--purple-primary) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--purple-dark) !important;
+    border-color: var(--purple-dark) !important;
+}
+
+/* Cards info-box con tema púrpura */
+.info-box.bg-info {
+    background: linear-gradient(135deg, var(--purple-primary) 0%, var(--purple-light) 100%) !important;
+}
+
+.small-box.bg-info {
+    background: linear-gradient(135deg, var(--purple-primary) 0%, var(--purple-light) 100%) !important;
+}
+
+.small-box.bg-success {
+    background: linear-gradient(135deg, #9333EA 0%, #A855F7 100%) !important;
+}
+
+.small-box.bg-warning {
+    background: linear-gradient(135deg, #C084FC 0%, #E9D5FF 100%) !important;
+    color: var(--purple-dark) !important;
+}
+
+.small-box.bg-danger {
+    background: linear-gradient(135deg, #7E22CE 0%, #9333EA 100%) !important;
+}
+
+.small-box.bg-primary {
+    background: linear-gradient(135deg, #A855F7 0%, #C084FC 100%) !important;
+}
+
+/* Headers de cards */
+.card-header.bg-info {
+    background: linear-gradient(90deg, var(--purple-primary) 0%, var(--purple-light) 100%) !important;
+    color: white !important;
+}
+
+/* Enlaces y badges */
+.badge-primary {
+    background-color: var(--purple-primary) !important;
+}
+
+.badge-info {
+    background-color: var(--purple-light) !important;
+}
+
+a {
+    color: var(--purple-primary);
+}
+
+a:hover {
+    color: var(--purple-dark);
+}
+
+/* Paginación */
+.pagination {
+    margin-bottom: 0;
+}
+
+.page-item .page-link {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    min-width: 2.5rem;
+    text-align: center;
+}
+
+.page-item.active .page-link {
+    background-color: var(--purple-primary) !important;
+    border-color: var(--purple-primary) !important;
+    color: white !important;
+}
+
+.page-link {
+    color: var(--purple-primary) !important;
+    border: 1px solid #dee2e6;
+    transition: all 0.2s;
+}
+
+.page-link:hover {
+    color: var(--purple-dark) !important;
+    background-color: var(--purple-bg) !important;
+    border-color: var(--purple-light);
+}
+
+.page-link:focus {
+    box-shadow: 0 0 0 0.2rem rgba(168, 85, 247, 0.25);
+}
+
+/* Fix para iconos SVG en paginación */
+.page-link svg {
+    width: 0.875rem !important;
+    height: 0.875rem !important;
+    vertical-align: middle;
+    fill: currentColor;
+    display: inline-block;
+}
+
+/* Ajustar tamaño de flechas de paginación */
+.pagination .page-item:first-child .page-link,
+.pagination .page-item:last-child .page-link {
+    font-size: 0.875rem;
+}
+
+.pagination .page-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Deshabilitar iconos grandes */
+.page-item.disabled .page-link {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Ocultar texto de "Previous" y "Next" si existe */
+.page-link span {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Asegurar que todos los SVG dentro de paginación sean pequeños */
+nav[role="navigation"] svg {
+    width: 1rem !important;
+    height: 1rem !important;
+    max-width: 1rem !important;
+    max-height: 1rem !important;
+}
+
+/* Content header */
+.content-header h1 {
+    color: var(--purple-dark);
+    font-weight: 600;
+}
+
+/* Tablas */
+.table thead th {
+    background-color: var(--purple-bg);
+    color: var(--purple-dark);
+    border-color: var(--purple-light);
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--purple-bg);
+}
+
+/* Forms */
+.form-control:focus {
+    border-color: var(--purple-light);
+    box-shadow: 0 0 0 0.2rem rgba(168, 85, 247, 0.25);
+}
+
+/* Navbar superior */
+.navbar-light {
+    background: white !important;
+    border-bottom: 2px solid var(--purple-light);
+}
+
+/* Sidebar search */
+.sidebar-light-purple .form-control-sidebar {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.sidebar-light-purple .form-control-sidebar:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: white;
+}
+
+.sidebar-light-purple .form-control-sidebar::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Iconos de FontAwesome en colores púrpura */
+.text-purple {
+    color: var(--purple-primary) !important;
+}
+
+/* Loading/Preloader */
+.preloader {
+    background-color: var(--purple-primary) !important;
+}
+
+/* Botones de acción en tablas */
+.btn-info {
+    background-color: var(--purple-light) !important;
+    border-color: var(--purple-light) !important;
+}
+
+.btn-info:hover {
+    background-color: var(--purple-primary) !important;
+    border-color: var(--purple-primary) !important;
+}
