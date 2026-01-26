@@ -1,1 +1,34 @@
-node_modules
+# Ignorar archivos de dependencias en todas las carpetas
+**/node_modules/
+**/vendor/
+
+# Ignorar archivos de entorno
+**/.env
+**/.env.*
+!**/.env.example
+
+# Ignorar archivos de cache y compilados
+**/storage/logs/*
+**/storage/framework/sessions/*
+**/storage/framework/views/*
+**/storage/framework/cache/*
+!**/.gitignore
+
+# Ignorar archivos de build
+**/public/build/
+**/public/hot
+**/public/storage
+
+# Ignorar archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Ignorar archivos de testing
+.phpunit.result.cache
