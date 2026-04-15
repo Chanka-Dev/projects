@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicología del Color</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: white;
+            padding: 20px;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+        }
+
+        header {
+            background-color: white;
+            color: #333;
+            padding: 30px 0;
+            text-align: center;
+            border-bottom: 3px solid #667eea;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0 0 10px 0;
+            color: #667eea;
+        }
+
+        header p {
+            margin: 0;
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .color-section {
+            margin-bottom: 50px;
+            padding: 25px;
+            background: white;
+            border: 1px solid #e0e0e0;
+        }
+
+        .color-section.red {
+            border-top: 4px solid #ff0000;
+        }
+
+        .color-section.blue {
+            border-top: 4px solid #0000ff;
+        }
+
+        .color-section.yellow {
+            border-top: 4px solid #ffd700;
+        }
+
+        h2 {
+            margin: 0 0 20px 0;
+            padding-bottom: 10px;
+            font-size: 1.8em;
+        }
+
+        .color-section.red h2 {
+            color: #ff0000;
+            border-bottom: 2px solid #ff0000;
+        }
+
+        .color-section.blue h2 {
+            color: #0000ff;
+            border-bottom: 2px solid #0000ff;
+        }
+
+        .color-section.yellow h2 {
+            color: #d4a000;
+            border-bottom: 2px solid #ffd700;
+        }
+
+        h3 {
+            color: #444;
+            margin: 25px 0 12px 0;
+            font-size: 1.3em;
+        }
+
+        p {
+            color: #555;
+            margin: 10px 0;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 25px;
+        }
+
+        ul li {
+            padding: 6px 0;
+            color: #444;
+        }
+
+        .color-samples {
+            display: flex;
+            gap: 15px;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+
+        .color-sample {
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            min-width: 180px;
+            border: 1px solid #ddd;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        a:hover {
+            border-bottom-color: #667eea;
+        }
+
+        .highlight-red {
+            background-color: #ff0000;
+            color: white;
+            padding: 15px;
+            border-left: 4px solid #cc0000;
+        }
+
+        .highlight-red li {
+            color: white;
+        }
+
+        .highlight-blue {
+            background-color: #0000ff;
+            color: white;
+            padding: 15px;
+            border-left: 4px solid #0000cc;
+        }
+
+        .highlight-blue li {
+            color: white;
+        }
+
+        .highlight-yellow {
+            background-color: #ffd700;
+            color: #333;
+            padding: 15px;
+            border-left: 4px solid #d4a000;
+        }
+
+        .highlight-yellow li {
+            color: #333;
+        }
+
+        .intro-box {
+            background-color: white;
+            padding: 25px;
+            border: 2px solid #667eea;
+            margin-bottom: 40px;
+        }
+
+        .intro-box h2 {
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .intro-box h3 {
+            color: #667eea;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Psicología del Color</h1>
+            <p>Impacto visual y emocional en diseño y marketing</p>
+        </header>
+
+        <div class="content">
+            <div class="intro-box">
+                <h2 style="color: white; border-bottom-color: white;">Colores Primarios</h2>
+                
+                <h3>Notación Hexadecimal</h3>
+                <div class="color-samples">
+                    <div class="color-sample" style="background-color: #FF0000;">Rojo Puro #FF0000</div>
+                    <div class="color-sample" style="background-color: #0000FF;">Azul Puro #0000FF</div>
+                    <div class="color-sample" style="background-color: #FFFF00; color: #333;">Amarillo Puro #FFFF00</div>
+                </div>
+                
+                <h3>Notación RGB</h3>
+                <div class="color-samples">
+                    <div class="color-sample" style="background-color: rgb(255, 0, 0);">Rojo rgb(255, 0, 0)</div>
+                    <div class="color-sample" style="background-color: rgb(0, 0, 255);">Azul rgb(0, 0, 255)</div>
+                    <div class="color-sample" style="background-color: rgb(255, 255, 0); color: #333;">Amarillo rgb(255, 255, 0)</div>
+                </div>
+
+                <h3 style="margin-top: 30px;">Impacto Psicológico Inicial</h3>
+                <p>Color Rojo:</p>
+                <ul>
+                    <li>Aumenta el ritmo cardiaco en un 5-10%</li>
+                    <li>Genera sensacion de urgencia o atencion inmediata</li>
+                    <li>Estimula el apetito (utilizado por 75% de comida rapida)</li>
+                </ul>
+                
+                <p>Color Azul:</p>
+                <ul>
+                    <li>Reduce el estres y la ansiedad</li>
+                    <li>Asociado con profesionalismo y fiabilidad</li>
+                    <li>Color preferido en un 57% de los hombres y 35% de las mujeres</li>
+                </ul>
+                
+                <p>Color Amarillo:</p>
+                <ul>
+                    <li>Estimula el lobulo frontal izquierdo, centro de procesamiento logico</li>
+                    <li>Aumenta la produccion de serotonina (Hormona del bienestar)</li>
+                    <li>Genera respuesta visual mas rapida (200ms vs 250ms promedio)</li>
+                </ul>
+            </div>
+
+            <!-- SECCIÓN ROJO -->
+            <div class="color-section red">
+                <h2 style="color: #ff0000;">🔴 Color Rojo</h2>
+            <div class="color-section red">
+                <h2 style="color: #ff0000;">🔴 Color Rojo</h2>
+                
+                <h3>Percepción Psicológica</h3>
+                
+                <p>Urgencia:</p>
+                <ul>
+                    <li>El color rojo a menudo se asocia con la urgencia, lo que lo convierte en una opción común para ventas de liquidación y promociones</li>
+                    <li>El rojo en elementos clave como los botones de llamada a la acción indica la acción deseada, como hacer clic en un formulario de captura de clientes potenciales</li>
+                    <li>La sensación de urgencia y entusiasmo que evoca el rojo lo convierte en una herramienta poderosa para impulsar las ventas</li>
+                </ul>
+                <p style="font-size: 0.9em;">Fuente: <a href="https://parachutedesign.ca/blog/consumer-behaviour-colour-theory/#Red_Urgency_and_Excitement">Parachute Design</a></p>
+                
+                <p>Pasión:</p>
+                <ul>
+                    <li>Este tono ardiente tiene más asociaciones emocionales opuestas que cualquier otro color: el rojo está vinculado a la pasión y al amor</li>
+                    <li>Estas asociaciones podrían explicar por qué las personas que visten de rojo son constantemente calificadas como más atractivas por el sexo opuesto</li>
+                </ul>
+                <p style="font-size: 0.9em;">Fuente: <a href="https://www.verywellmind.com/the-color-psychology-of-red-2795821">Verywell Mind</a></p>
+                
+                <p>Energía:</p>
+                <ul>
+                    <li>Los estudios muestran que estar expuesto o usar rojo puede causar algunos cambios físicos</li>
+                    <li>Presión arterial elevada</li>
+                    <li>Metabolismo mejorado</li>
+                    <li>Aumento de la frecuencia cardíaca</li>
+                </ul>
+                <p style="font-size: 0.9em;">Fuente: <a href="https://www.verywellmind.com/the-color-psychology-of-red-2795821">Verywell Mind</a></p>
+
+                <h3>Aplicación Práctica</h3>
+                
+                <p>Cuándo utilizar:</p>
+                <ul>
+                    <li>Anuncios de peligro y alertas de seguridad</li>
+                    <li>Marcas de comida rápida para estimular el apetito</li>
+                    <li>Botones de llamada a la acción en sitios web</li>
+                </ul>
+                <p style="font-size: 0.9em;">Fuente: <a href="https://ebac.mx/blog/color-rojo">EBAC</a></p>
+                
+                <p>En Marketing:</p>
+                <ul class="highlight-red">
+                    <li>Botones "comprar ahora" o "oferta limitada"</li>
+                    <li>Elementos que requieren atención inmediata</li>
+                    <li>Logotipos de comida rápida (McDonald's, KFC)</li>
+                </ul>
+                
+                <p>En Diseño Web:</p>
+                <ul>
+                    <li>Banners de promoción temporales</li>
+                    <li>Iconos de alerta para errores del sistema</li>
+                    <li>Notificaciones de error en formularios</li>
+                </ul>
+                
+                <p>⚠️ Evitar:</p>
+                <ul>
+                    <li>Fondo completo de páginas largas (satura la percepción y genera fatiga visual)</li>
+                    <li>Texto largo sobre fondo rojo (dificulta la lectura)</li>
+                </ul>
+            </div>
+
+            <!-- SECCIÓN AZUL -->
+            <div class="color-section blue">
+                <h2 style="color: #0000ff;">🔵 Color Azul</h2>
+            <!-- SECCIÓN AZUL -->
+            <div class="color-section blue">
+                <h2 style="color: #0000ff;">🔵 Color Azul</h2>
+                
+                <h3>Percepción Psicológica</h3>
+                
+                <p>Confianza:</p>
+                <ul>
+                    <li>Se vincula a la credibilidad y confiabilidad</li>
+                    <li>Al cuidado de los demás y responsabilidad</li>
+                    <li>Entendimiento y protección en marcas corporativas</li>
+                </ul>
+                <p style="font-size: 0.9em;">Fuente: <a href="https://psicologiaymente.com/psicologia/que-significa-el-azul">Psicología y Mente</a></p>
+                
+                <p>Calma:</p>
+                <ul>
+                    <li>Tonos más claros son frecuentemente asociados a la inocencia y a la generosidad</li>
+                    <li>Su vinculación más conocida es con la idea de serenidad y calma</li>
+                    <li>Se trata de uno de los colores más relacionados con la tranquilidad y el control de la situación</li>
+                </ul>
+                <p style="font-size: 0.9em;">Fuente: <a href="https://psicologiaymente.com/psicologia/que-significa-el-azul">Psicología y Mente</a></p>
+                
+                <p>Profesionalismo:</p>
+                <ul>
+                    <li>Los tonos más oscuros se relacionan con la inteligencia, el poder y el saber estar</li>
+                    <li>Inspira liderazgo y autoridad en entornos corporativos</li>
+                    <li>Precisión y frialdad para temas de ingeniería o desarrollo tecnológico</li>
+                </ul>
+                <p style="font-size: 0.9em;">Fuente: <a href="https://psicologiaymente.com/psicologia/que-significa-el-azul">Psicología y Mente</a></p>
+
+                <h3>Aplicación Práctica</h3>
+                
+                <p>Cuándo utilizar:</p>
+                <ul>
+                    <li>Formularios de registro y autenticación</li>
+                    <li>Botones "enviar" o "más información"</li>
+                    <li>Acciones que requieren confianza (datos personales, pagos)</li>
+                </ul>
+                
+                <p>En Marketing:</p>
+                <ul>
+                    <li>Productos tecnológicos y software (Microsoft, Facebook, IBM)</li>
+                    <li>Servicios financieros y bancarios (PayPal, Visa)</li>
+                    <li>Marcas de salud y bienestar (Oral-B, Nivea)</li>
+                </ul>
+                <p style="font-size: 0.9em;">Fuente: <a href="https://www.verywellmind.com/the-color-psychology-of-blue-2795815">Verywell Mind - Blue Psychology</a></p>
+                
+                <p>En Diseño Web:</p>
+                <ul class="highlight-blue">
+                    <li>Tonos óptimos de uso: Azul royal #2563EB</li>
+                    <li>Brillo: 60-70% para mejor legibilidad</li>
+                    <li>Texto contrastante: #FFFFFF para accesibilidad</li>
+                </ul>
+                
+                <p>⚠️ Evitar:</p>
+                <ul>
+                    <li>En textos largos que tengan bajo contraste con el fondo</li>
+                    <li>Indicadores de alerta o error (reservar para rojo/amarillo)</li>
+                </ul>
+            </div>
+
+            <!-- SECCIÓN AMARILLO -->
+            <div class="color-section yellow">
+                <h2 style="color: #d4a000;">🟡 Color Amarillo</h2>
+            <!-- SECCIÓN AMARILLO -->
+            <div class="color-section yellow">
+                <h2 style="color: #d4a000;">🟡 Color Amarillo</h2>
+                
+                <h3>Percepción Psicológica</h3>
+
+                <p>Optimismo: 87% de asociación</p>
+                <ul>
+                    <li>Relacionado con la energía solar y vitalidad</li>
+                    <li>Estimula pensamientos positivos y creatividad</li>
+                    <li>Reduce la percepción de riesgo en toma de decisiones</li>
+                </ul>
+                
+                <p>Juventud: 92% de asociación</p>
+                <ul>
+                    <li>Conectado con juegos infantiles y adolescentes</li>
+                    <li>Sugiere innovación y frescura en productos</li>
+                    <li>Atrae audiencia entre 18-35 años principalmente</li>
+                </ul>
+                
+                <p>Atención: +65% de efectividad</p>
+                <ul>
+                    <li>Segundo color más visible después del rojo</li>
+                    <li>Usado en señales de advertencia mundialmente</li>
+                    <li>Captura atención periférica efectivamente</li>
+                </ul>
+
+                <h3>Aplicación Práctica</h3>
+
+                <p>Cuándo utilizar:</p>
+                <ul>
+                    <li>Señales de precaución y advertencia (zonas de construcción)</li>
+                    <li>Promociones y ofertas especiales para captar atención</li>
+                    <li>Productos infantiles y marcas juveniles</li>
+                </ul>
+                <p style="font-size: 0.9em;">Fuente: <a href="https://www.verywellmind.com/the-color-psychology-of-yellow-2795823">Verywell Mind - Yellow Psychology</a></p>
+
+                <p>En Marketing:</p>
+                <ul>
+                    <li>Marcas de comida rápida combinado con rojo (McDonald's, Subway)</li>
+                    <li>Productos de limpieza y optimismo del hogar</li>
+                    <li>Destacar descuentos y ofertas limitadas</li>
+                </ul>
+                <p style="font-size: 0.9em;">Fuente: <a href="https://www.color-meanings.com/yellow-color-meaning-the-color-yellow/">Color Meanings - Yellow in Marketing</a></p>
+
+                <p>En Diseño Web:</p>
+                <ul class="highlight-yellow">
+                    <li>Botones de acción secundaria o información adicional</li>
+                    <li>Banners de advertencia o notas importantes</li>
+                    <li>Elementos que requieren atención sin ser críticos</li>
+                </ul>
+                <p style="font-size: 0.9em;">Fuente: <a href="https://www.smashingmagazine.com/2010/01/color-theory-for-designers-part-1-the-meaning-of-color/">Smashing Magazine - Color Theory</a></p>
+
+                <p>⚠️ Evitar:</p>
+                <ul>
+                    <li>Fondos amarillos brillantes en textos largos (cansa la vista)</li>
+                    <li>Uso excesivo que puede generar ansiedad o nerviosismo</li>
+                </ul>                <p style="font-size: 0.9em;">Fuente: <a href="https://www.verywellmind.com/the-color-psychology-of-yellow-2795823">Verywell Mind - Yellow Psychology</a></p>            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,8 +1,17 @@
 # Portafolio de Proyectos
 
-Este repositorio contiene copias de varios proyectos Laravel desarrollados para diferentes propósitos académicos y personales.
+Este repositorio contiene copias de varios proyectos desarrollados con diferentes stacks tecnológicos para propósitos académicos, personales y municipales.
 
 > **⚠️ Nota Importante:** Este repositorio es únicamente para control de versiones en GitHub. Los proyectos en producción se encuentran en `/var/www/` y se sincronizan aquí para hacer push.
+
+## 🎯 Proyectos Destacados
+
+- 🏛️ **FixSucre:** Sistema de reportes ciudadanos (Laravel + PostgreSQL)
+- 💰 **Finanzas:** Gestión financiera (Node.js + React/Vue)
+- 🦕 **Colorsaurio:** Teoría del color educativa con dinosaurios
+- 🛒 **Distribuidora:** Sistema de ventas e inventario
+- 💼 **Mi-Proyecto:** Gestión de citas y servicios
+- 📊 **SuperOrganico:** Sistema contable con cálculos fiscales Bolivia
 
 ## 📁 Estructura del Sistema
 
@@ -11,27 +20,51 @@ Este repositorio contiene copias de varios proyectos Laravel desarrollados para 
 ├── distribuidora/          # ✅ Carpeta de trabajo en producción
 ├── mi-proyecto/            # ✅ Carpeta de trabajo en producción
 ├── superorganico/          # ✅ Carpeta de trabajo en producción
+├── FixSucre/               # ✅ Carpeta de trabajo en producción
+├── finanzas/               # ✅ Carpeta de trabajo en producción
+├── colores/                # ✅ Carpeta de trabajo en producción
 └── proyectos/              # 📦 Repositorio Git (este)
     ├── distribuidora-project/  # Copia para GitHub
     ├── mi-proyecto/            # Copia para GitHub
-    └── superorganico/          # Copia para GitHub
+    ├── superorganico/          # Copia para GitHub
+    ├── FixSucre/               # Copia para GitHub
+    ├── finanzas/               # Copia para GitHub
+    └── colores/                # Copia para GitHub
 ```
 
 ## 🔄 Workflow de Actualización
 
 Para sincronizar cambios al repositorio de GitHub:
 
-1. **Trabajar** en las carpetas de producción: `/var/www/distribuidora`, `/var/www/mi-proyecto`, `/var/www/superorganico`
+1. **Trabajar** en las carpetas de producción en `/var/www/[proyecto]`
 2. **Copiar** cambios al repositorio:
    ```bash
    cd /var/www
+   
+   # Distribuidora
    rsync -av --exclude='node_modules' --exclude='vendor' --exclude='.env' --exclude='storage/logs/*' --exclude='storage/framework/sessions/*' --exclude='storage/framework/views/*' --exclude='storage/framework/cache/*' ./distribuidora/ ./proyectos/distribuidora-project/
+   
+   # Mi-Proyecto
+   rsync -av --exclude='node_modules' --exclude='vendor' --exclude='.env' --exclude='storage/logs/*' --exclude='storage/framework/sessions/*' --exclude='storage/framework/views/*' --exclude='storage/framework/cache/*' ./mi-proyecto/ ./proyectos/mi-proyecto/
+   
+   # SuperOrganico
+   rsync -av --exclude='node_modules' --exclude='vendor' --exclude='.env' --exclude='storage/logs/*' --exclude='storage/framework/sessions/*' --exclude='storage/framework/views/*' --exclude='storage/framework/cache/*' ./superorganico/ ./proyectos/superorganico/
+   
+   # FixSucre
+   rsync -av --exclude='node_modules' --exclude='vendor' --exclude='.env' --exclude='storage/logs/*' --exclude='storage/framework/sessions/*' --exclude='storage/framework/views/*' --exclude='storage/framework/cache/*' ./FixSucre/ ./proyectos/FixSucre/
+   
+   # Finanzas
+   rsync -av --exclude='node_modules' --exclude='vendor' --exclude='.env' --exclude='storage/logs/*' ./finanzas/ ./proyectos/finanzas/
+   
+   # Colores (Colorsaurio)
+   rsync -av --exclude='node_modules' --exclude='vendor' --exclude='.env' --exclude='storage/logs/*' --exclude='storage/framework/sessions/*' --exclude='storage/framework/views/*' --exclude='storage/framework/cache/*' ./colores/ ./proyectos/colores/
    ```
+   
 3. **Commit y Push** desde el repositorio:
    ```bash
    cd /var/www/proyectos
    git add .
-   git commit -m "Actualizar cambios de [proyecto]"
+   git commit -m "Actualizar proyectos [fecha/descripción]"
    git push origin main
    ```
 
@@ -122,6 +155,106 @@ Sistema contable completo con integración de cálculos de impuestos para Bolivi
 
 ---
 
+### 4. 🏛️ FixSucre
+Sistema de reportes ciudadanos para la gestión municipal de problemas urbanos.
+
+**Características:**
+- Reportes ciudadanos con geolocalización
+- Sistema de asignación a gestores municipales
+- Seguimiento de reportes por áreas
+- Panel de administración para gestores
+- Autenticación de usuarios (Ciudadano/Gestor)
+- Categorías de problemas urbanos
+- Sistema de seguimiento y resolución
+- Interfaz responsive
+
+**Stack Tecnológico:**
+- Laravel 10
+- PHP 8.1.2
+- PostgreSQL 14.22
+- Tailwind CSS
+- Composer 2.8.12
+
+**Módulos:**
+- Usuarios y Roles
+- Ciudadanos
+- Gestores Municipales
+- Áreas Municipales
+- Categorías de Problemas
+- Reportes
+- Asignaciones
+- Seguimientos
+
+**URL Producción:** `http://181.188.171.38/FixSucre`
+
+**Historial de Desarrollo:**
+- 18/03/2026: Configuración inicial con Filament 3.3
+- 25/03/2026: Migración a Laravel puro con Tailwind
+- 01/04/2026: Corrección autenticación y logout
+- 08/04/2026: Mejoras responsive y reasignación de reportes
+
+---
+
+### 5. 💰 Finanzas
+Sistema de gestión financiera con arquitectura frontend/backend separada.
+
+**Características:**
+- Arquitectura desacoplada (Backend API + Frontend SPA)
+- Gestión de ingresos y egresos
+- Categorización de transacciones
+- Dashboard con métricas financieras
+- Reportes y estadísticas
+
+**Stack Tecnológico:**
+- **Backend:** Node.js + Express
+- **Frontend:** React/Vue (SPA)
+- **Base de Datos:** MySQL/PostgreSQL
+- **API RESTful**
+
+**Estructura:**
+```
+finanzas/
+├── backend/     # API Node.js
+├── frontend/    # Aplicación SPA
+└── database/    # Scripts SQL
+```
+
+---
+
+### 6. 🦕 Colores (Colorsaurio)
+Plataforma educativa de teoría del color con temática de dinosaurios.
+
+**Características:**
+- Teoría del color con análisis psicológico
+- Generador de paletas temáticas (6 tipos)
+- Códigos HEX y RGB copiables
+- Vista previa de colores en diseño web
+- Temática divertida con dinosaurios 🦖
+- Interfaz completamente responsive
+
+**Stack Tecnológico:**
+- Laravel 10.50.0
+- PHP 8.1.2
+- Tailwind CSS (vía CDN)
+- Alpine.js
+- Sin base de datos (paletas hardcodeadas)
+
+**Tipos de Paletas:**
+- Urgencia y Acción (Rojos)
+- Confianza y Profesionalismo (Azules)
+- Optimismo y Energía (Amarillos)
+- Naturaleza y Crecimiento (Verdes)
+- Creatividad y Lujo (Púrpuras)
+- Energía y Diversión (Naranjas)
+
+**URL Producción:** `http://localhost/colores`
+
+**Características Especiales:**
+- RAAAWWWRRRR! 🦕
+- Footer épico: "Teoría del Color Mesosoica"
+
+---
+
 ## 💻 Instalación (Para Desarrollo Local)
 
 Cada proyecto tiene sus propias dependencias. Para instalar cualquiera de ellos:
@@ -163,11 +296,38 @@ php artisan serve
 
 ## 📈 Estadísticas
 
-- **Total de proyectos:** 3
-- **Lenguajes principales:** PHP, JavaScript
-- **Frameworks:** Laravel 10, Tailwind CSS, Alpine.js
-- **Base de datos:** MySQL
+- **Total de proyectos:** 6
+- **Lenguajes principales:** PHP, JavaScript, SQL
+- **Frameworks Backend:** Laravel 10, Node.js + Express
+- **Frameworks Frontend:** Tailwind CSS, Alpine.js, React/Vue
+- **Bases de datos:** MySQL, PostgreSQL
 - **Servidor:** Nginx + PHP 8.1-FPM
+- **Temáticas:** Contabilidad, Gestión Municipal, Finanzas, E-commerce, Servicios, Educación
+
+---
+
+## 🛠️ Stack Tecnológico Completo
+
+### Backend
+- **PHP:** 8.1.2
+- **Laravel:** 10.x
+- **Node.js:** Express API
+- **Composer:** 2.8.12
+
+### Frontend
+- **Tailwind CSS**
+- **Alpine.js**
+- **React/Vue (SPA)**
+- **AdminLTE 3**
+
+### Bases de Datos
+- **MySQL**
+- **PostgreSQL 14.22**
+
+### Servidor & Deployment
+- **Nginx**
+- **PHP-FPM 8.1**
+- **Producción:** http://181.188.171.38
 
 ---
 
