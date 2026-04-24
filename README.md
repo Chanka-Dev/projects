@@ -12,6 +12,7 @@ Este repositorio contiene copias de varios proyectos desarrollados con diferente
 - 🛒 **Distribuidora:** Sistema de ventas e inventario
 - 💼 **Mi-Proyecto:** Gestión de citas y servicios
 - 📊 **SuperOrganico:** Sistema contable con cálculos fiscales Bolivia
+- 📖 **Roles-Permisos:** Sistema de roles y permisos con recetario (Laravel + Tailwind)
 
 ## 📁 Estructura del Sistema
 
@@ -29,7 +30,8 @@ Este repositorio contiene copias de varios proyectos desarrollados con diferente
     ├── superorganico/          # Copia para GitHub
     ├── FixSucre/               # Copia para GitHub
     ├── finanzas/               # Copia para GitHub
-    └── colores/                # Copia para GitHub
+    ├── colores/                # Copia para GitHub
+    └── roles-permisos/         # Copia para GitHub
 ```
 
 ## 🔄 Workflow de Actualización
@@ -58,6 +60,9 @@ Para sincronizar cambios al repositorio de GitHub:
    
    # Colores (Colorsaurio)
    rsync -av --exclude='node_modules' --exclude='vendor' --exclude='.env' --exclude='storage/logs/*' --exclude='storage/framework/sessions/*' --exclude='storage/framework/views/*' --exclude='storage/framework/cache/*' ./colores/ ./proyectos/colores/
+
+   # Roles-Permisos
+   rsync -av --exclude='node_modules' --exclude='vendor' --exclude='.env' --exclude='storage/logs/*' --exclude='storage/framework/sessions/*' --exclude='storage/framework/views/*' --exclude='storage/framework/cache/*' ./roles-permisos/ ./proyectos/roles-permisos/
    ```
    
 3. **Commit y Push** desde el repositorio:
